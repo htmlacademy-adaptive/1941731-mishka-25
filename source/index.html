@@ -7,7 +7,6 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
-      <span class="visually-hidden">Ссылка на главную страницу</span>
       <img src="img/mishka_logo_mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
     </a>
     <nav class="main-nav">
@@ -84,18 +83,18 @@
         <h3 class="product-of-the-week__sub-title">товар недели</h3>
         <p class="product-of-the-week__description">Экологически чистая пряжа,
           ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-          <dl class="product-of-the-week__characteristics characteristics-list">
-            <div class="characteristics-list__item">
-              <dt class="characteristics-list__name">Цвет:</dt>
-              <dd class="characteristics-list__value">тиффани/серый</dd>
+          <dl class="product-of-the-week__characteristics">
+            <div class="product-of-the-week__item">
+              <dt class="product-of-the-week__name">Цвет:</dt>
+              <dd class="product-of-the-week__value">тиффани/серый</dd>
             </div>
-            <div class="characteristics-list__item">
-              <dt class="characteristics-list__name">Диаметр:</dt>
-              <dd class="characteristics-list__value">25 см</dd>
+            <div class="product-of-the-week__item">
+              <dt class="product-of-the-week__name">Диаметр:</dt>
+              <dd class="product-of-the-week__value">25 см</dd>
             </div>
-            <div class="characteristics-list__item">
-              <dt class="characteristics-list__name">Высота:</dt>
-              <dd class="characteristics-list__value">15 см</dd>
+            <div class="product-of-the-week__item">
+              <dt class="product-of-the-week__name">Высота:</dt>
+              <dd class="product-of-the-week__value">15 см</dd>
             </div>
           </dl>
           <a class="product-of-the-week__link" href="#">
@@ -112,7 +111,6 @@
       <h2 class="visually-hidden">О нас</h2>
       <ul class="about-us__list">
         <li class="about-us__item">
-
           <p>Экологически<br> чистые материалы</p>
         </li>
         <li class="about-us__item">
@@ -135,7 +133,7 @@
     <section class="reviews">
       <h2 class="reviews__title">Отзывы</h2>
       <ul class="reviews__list">
-        <li class="reviews__current">
+        <li class="reviews__review">
           <p class="reviews__content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
             у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
             и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
@@ -157,7 +155,7 @@
           <p class="reviews__author-id">@misssssiskras3</p>
         </li>
       </ul>
-        <div class="switches__wrapper">
+        <div class="reviews__wrapper">
           <button type="button" class="reviews__switch">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="26" viewBox="0 0 50 26" fill="none">
               <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black"/>
@@ -174,24 +172,24 @@
         </a>
     </section>
 
-      <dl class="contacts">
-        <div class="contacts__item">
-          <dt class="contacts__key">e-mail:</dt>
-          <dd class="contacts__value">info@mimimishkashop.ru</dd>
-        </div>
-        <div class="contacts__item">
-          <dt class="contacts__key">адрес:</dt>
-          <dd class="contacts__value">г. Санкт-Петербург <br>ул. Большая Конюшенная<br>д. 19/8, офис 101</dd>
-        </div>
-      </dl>
-      <img class="contacts__map" src="img/map_mobile.jpg" alt="Карта">
-      <img class="contacts__pin" src="img/map_pin.svg" alt="Маркер на карте">
+    <dl class="contacts">
+      <div class="contacts__item">
+        <dt class="contacts__key">e-mail:</dt>
+        <dd class="contacts__value"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
+      </div>
+      <div class="contacts__item">
+        <dt class="contacts__key">адрес:</dt>
+        <dd class="contacts__value">г. Санкт-Петербург <br>ул. Большая Конюшенная<br>д. 19/8, офис 101</dd>
+      </div>
+    </dl>
+    <img class="contacts__map" src="img/map_mobile.jpg" alt="Карта">
+    <img class="contacts__pin" src="img/map_pin.svg" alt="Маркер на карте">
 
-      <a class="button contacts__link" href="#">
-        напишите нам
-      </a>
-
+    <a class="button contacts__link" href="#">
+      напишите нам
+    </a>
   </main>
+
   <footer class="main-footer">
     <section class="social-links">
       <h2 class="visually-hidden">Социальные сети</h2>
