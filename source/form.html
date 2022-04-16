@@ -47,108 +47,108 @@
   </header>
   <main class="main-container">
 
-   <section class="form-about">
-     <h1 class="form-about__form-name">Вязание на заказ</h1>
-     <p class="form-about__form-description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-   </section>
-   <form class="form-to-order" action="https://echo.htmlacademy.ru/" method="post">
+    <section class="form-about">
+      <h1 class="form-about__form-name">Вязание на заказ</h1>
+      <p class="form-about__form-description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+    </section>
+    <form class="form-to-order" action="https://echo.htmlacademy.ru/" method="post">
 
-    <fieldset class="form-to-order__fieldset type-of-product">
-      <legend class="type-of-product__title">тип</legend>
+      <fieldset class="form-to-order__fieldset type-of-product">
+        <legend class="type-of-product__title">тип</legend>
 
-      <label class="type-of-product__name-of-type">
-          <input class="type-of-product__input" type ="radio" name="interior-accessory" checked>
-          Аксесуар для интерьера
-      </label>
-
-      <label class="type-of-product__name-of-type">
-          <input class="type-of-product__input" type ="radio" name="childrens-toy">
-          Детская игрушка
-      </label>
-    </fieldset>
-
-    <fieldset class="form-to-order__fieldset color-of-product">
-      <legend class="color-of-product__title">цвет</legend>
-
-        <label class="color-of-product__name-of-color">
-          <input class="color-of-product__input" type ="checkbox" name="white" checked>
-          Белый
+        <label class="type-of-product__name-of-type">
+            <input class="type-of-product__input" type ="radio" name="interior-accessory" checked>
+            Аксесуар для интерьера
         </label>
 
-        <label class="color-of-product__name-of-color">
-          <input class="color-of-product__input" type ="checkbox" name="grey" checked>
-          Серый
+        <label class="type-of-product__name-of-type">
+            <input class="type-of-product__input" type ="radio" name="childrens-toy">
+            Детская игрушка
+        </label>
+      </fieldset>
+
+      <fieldset class="form-to-order__fieldset color-of-product">
+        <legend class="color-of-product__title">цвет</legend>
+
+          <label class="color-of-product__name-of-color">
+            <input class="color-of-product__input" type ="checkbox" name="white" checked>
+            Белый
+          </label>
+
+          <label class="color-of-product__name-of-color">
+            <input class="color-of-product__input" type ="checkbox" name="grey" checked>
+            Серый
+          </label>
+
+          <label class="color-of-product__name-of-color">
+            <input class="color-of-product__input" type ="checkbox" name="tiffany">
+            Тиффани
+          </label>
+
+          <label class="color-of-product__name-of-color">
+            <input class="color-of-product__input" type ="checkbox" name="black">
+            Черный
+          </label>
+
+          <label class="color-of-product__name-of-color">
+            <input class="color-of-product__input" type ="checkbox" name="pink">
+            Розовый
+          </label>
+
+          <label class="color-of-product__name-of-color">
+            <input class="color-of-product__input" type ="checkbox" name="orange">
+            Оранжевый
+          </label>
+      </fieldset>
+
+      <fieldset class="form-to-order__fieldset full-name-of-customer">
+        <legend class="full-name-of-customer__title">фио</legend>
+
+        <label class="full-name-of-customer__first-name">
+          Имя:
+          <input class="full-name-of-customer__input" type ="text" name="first-name" placeholder="Введите ваше имя*">
         </label>
 
-        <label class="color-of-product__name-of-color">
-          <input class="color-of-product__input" type ="checkbox" name="tiffany">
-          Тиффани
+        <label class="full-name-of-customer__surname">
+          Фамилия:
+          <input class="full-name-of-customer__input" type ="text" name="surname" placeholder="Укажите фамилию*">
         </label>
 
-        <label class="color-of-product__name-of-color">
-          <input class="color-of-product__input" type ="checkbox" name="black">
-          Черный
+        <label class="full-name-of-customer__patronymic">
+          Отчество:
+          <input class="full-name-of-customer__input" type ="text" name="partonymic" placeholder="Отчество, если желаете">
         </label>
+      </fieldset>
 
-        <label class="color-of-product__name-of-color">
-          <input class="color-of-product__input" type ="checkbox" name="pink">
-          Розовый
+      <fieldset class="form-to-order__fieldset phone-number-of-customer">
+        <legend class="phone-number-of-customer__title">тел</legend>
+
+        <label class="phone-number-of-customer__number">
+          <input class="phone-number-of-customer__input" type ="tel" name="phone-number-of-customer" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
         </label>
+      </fieldset>
 
-        <label class="color-of-product__name-of-color">
-          <input class="color-of-product__input" type ="checkbox" name="orange">
-          Оранжевый
+      <fieldset class="form-to-order__fieldset email-of-customer">
+        <legend class="email-of-customer__title">тел</legend>
+
+        <label class="email-of-customer__email">
+          <input class="email-of-customer__input" type ="email" name="email-number-of-customer" placeholder="Ваш Email*">
         </label>
-    </fieldset>
+      </fieldset>
 
-    <fieldset class="form-to-order__fieldset full-name-of-customer">
-      <legend class="full-name-of-customer__title">фио</legend>
+      <fieldset class="form-to-order__fieldset extra-information">
+        <legend class="extra-information__title">доп</legend>
 
-      <label class="full-name-of-customer__first-name">
-        Имя:
-        <input class="full-name-of-customer__input" type ="text" name="first-name" placeholder="Введите ваше имя*">
-      </label>
+        <label class="email-of-customer__email">
+          <textarea class="extra-information__input" placeholder="Опишите все ваши пожелания к заказу" id="extra-information" name="extra-information"></textarea>
+        </label>
+      </fieldset>
 
-      <label class="full-name-of-customer__surname">
-        Фамилия:
-        <input class="full-name-of-customer__input" type ="text" name="surname" placeholder="Укажите фамилию*">
-      </label>
+      <p class="form-to-order__explanation">*Поля обязательны для заполнения</p>
 
-      <label class="full-name-of-customer__patronymic">
-        Отчество:
-        <input class="full-name-of-customer__input" type ="text" name="partonymic" placeholder="Отчество, если желаете">
-      </label>
-    </fieldset>
-
-    <fieldset class="form-to-order__fieldset phone-number-of-customer">
-      <legend class="phone-number-of-customer__title">тел</legend>
-
-      <label class="phone-number-of-customer__number">
-        <input class="phone-number-of-customer__input" type ="tel" name="phone-number-of-customer" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-      </label>
-    </fieldset>
-
-    <fieldset class="form-to-order__fieldset email-of-customer">
-      <legend class="email-of-customer__title">тел</legend>
-
-      <label class="email-of-customer__email">
-        <input class="email-of-customer__input" type ="email" name="email-number-of-customer" placeholder="Ваш Email*">
-      </label>
-    </fieldset>
-
-    <fieldset class="form-to-order__fieldset extra-information">
-      <legend class="extra-information__title">доп</legend>
-
-      <label class="email-of-customer__email">
-        <textarea class="extra-information__input" placeholder="Опишите все ваши пожелания к заказу" id="extra-information" name="extra-information"></textarea>
-      </label>
-    </fieldset>
-
-    <p class="form-to-order__explanation">*Поля обязательны для заполнения</p>
-
-    <button class="button form-to-order__button" type="submit">отправить заказ</button>
-  </form>
- </main>
+      <button class="button form-to-order__button" type="submit">отправить заказ</button>
+    </form>
+  </main>
   <footer class="main-footer">
     <section class="social-links">
       <h2 class="visually-hidden">Социальные сети</h2>
