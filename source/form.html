@@ -48,24 +48,24 @@
 
   <main class="main-container">
     <h1 class="page-title">Вязание на заказ</h1>
-    <p class="page-description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+      <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <fieldset class="form__fieldset">
         <legend class="form__legend">тип</legend>
 
-        <label class="type-of-product__name-of-type">
-            <input class="type-of-product__input" type="radio" name="interior-accessory" checked>
+        <label class="form__label">
+            <input class="form__radio-input" type="radio" name="interior-accessory" checked>
             Аксесуар для интерьера
         </label>
 
-        <label class="type-of-product__name-of-type">
-            <input class="type-of-product__input" type="radio" name="childrens-toy">
+        <label class="form__label">
+            <input class="form__radio-input" type="radio" name="childrens-toy">
             Детская игрушка
         </label>
       </fieldset>
 
-      <fieldset class="form__fieldset color-of-product">
+      <fieldset class="form__fieldset">
         <legend class="form__legend">цвет</legend>
 
           <label class="form__label">
@@ -99,30 +99,22 @@
           </label>
       </fieldset>
 
-      <fieldset class="form__fieldset full-name-of-customer">
+      <fieldset class="form__fieldset">
         <legend class="form__legend">фио</legend>
 
         <label class="form__label">
           Имя:
-          <input class="form__name-input" type="text" name="first-name" placeholder="Введите ваше имя*">
+          <input class="form__contacts-input" type="text" name="first-name" placeholder="Введите ваше имя*">
         </label>
 
         <label class="form__label">
           Фамилия:
-          <input class="form__name-input" type="text" name="surname" placeholder="Укажите фамилию*">
+          <input class="form__contacts-input" type="text" name="surname" placeholder="Укажите фамилию*">
         </label>
 
         <label class="form__label">
           Отчество:
-          <input class="form__name-input" type="text" name="partonymic" placeholder="Отчество, если желаете">
-        </label>
-      </fieldset>
-
-      <fieldset class="form__fieldset phone-number-of-customer">
-        <legend class="form__legend">тел</legend>
-
-        <label class="form__label">
-          <input class="form__phone-input" type="tel" name="phone-number-of-customer" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          <input class="form__contacts-input" type="text" name="partonymic" placeholder="Отчество, если желаете">
         </label>
       </fieldset>
 
@@ -130,11 +122,19 @@
         <legend class="form__legend">тел</legend>
 
         <label class="form__label">
-          <input class="form__email-input" type="email" name="email-number-of-customer" placeholder="Ваш Email*">
+          <input class="form__contacts-input" type="tel" name="phone-number-of-customer" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
         </label>
       </fieldset>
 
-      <fieldset class="form__fieldset extra-information">
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">тел</legend>
+
+        <label class="form__label">
+          <input class="form__contacts-input" type="email" name="email-number-of-customer" placeholder="Ваш Email*">
+        </label>
+      </fieldset>
+
+      <fieldset class="form__fieldset">
         <legend class="form__legend">доп</legend>
 
         <label class="form__label">
@@ -147,6 +147,7 @@
       <button class="button form__button" type="submit">отправить заказ</button>
     </form>
   </main>
+
   <footer class="main-footer">
     <section class="social-links">
       <h2 class="visually-hidden">Социальные сети</h2>
