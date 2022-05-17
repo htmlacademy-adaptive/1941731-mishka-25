@@ -1,3 +1,13 @@
 .main-footer {
   background-color: @seashell;
+  @media (min-width: @tablet-width) {
+    display:flex;
+    justify-content: space-between;
+  }
+}
+.main-footer__logo-tablet{
+  display:none;
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }

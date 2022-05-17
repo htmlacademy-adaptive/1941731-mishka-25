@@ -12,6 +12,9 @@
 .catalog-preview__list {
   .no-markers-list;
   margin: 0;
+  @media (min-width: @tablet-width){
+    display:flex;
+  }
 }
 
 .catalog-preview__link {
@@ -24,9 +27,15 @@
 }
 
 .catalog-preview__item {
-  padding: 24px 160px 31px 30px;
+  padding: 24px 30px 31px 30px;
+  width:84%;
+  @media (min-width:@tablet-width){
+    width:50%;
+  }
 }
-
+.catalog-preview__image{
+  margin-left:auto;
+}
 .catalog-preview__item:nth-child(1) {
   background-color: @downy;
 }
