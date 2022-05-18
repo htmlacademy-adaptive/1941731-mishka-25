@@ -2,9 +2,14 @@
   margin: 0;
   position: relative;
   color: @tundora;
+  @media (min-width: @tablet-width){
+   margin-top: 131px;
+  }
   @media (min-width: @desktop-width){
     display:grid;
     grid-template-columns: 1fr 291px 527px;
+    column-gap: 30px;
+    margin-bottom: 105px;
   }
 
 }
@@ -44,6 +49,8 @@
   margin-bottom: 0;
   @media (min-width: @desktop-width){
     order:2;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -68,11 +75,18 @@
 .contacts__map {
   margin-top: 62px;
   margin-bottom: 0;
-  width:100%;
+  width: 100vw;
+  margin-left: -30px;
+  max-width: none;
+  @media (min-width: @tablet-width){
+    margin-left: -50px;
+  }
   @media (min-width: @desktop-width){
-    max-width:528px;
+    margin: 0;
+    max-width: 528px;
     grid-column: 3/4;
     grid-row: 1/4;
+    max-height: 457px;
   }
 }
 
@@ -85,9 +99,21 @@
   }
 }
 .contacts__link{
-  margin: 40px 30px;
+  width: 100%;
+  margin: 0;
+
+
+}
+.contacts__link-container{
+  @media (min-width: @tablet-width){
+    width: 226px;
+    margin: 55px auto;
+    float: none;
+   }
   @media (min-width: @desktop-width){
-   grid-column: 2/3;
-   grid-row: 3/4;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin: 38px auto 0 auto;
   }
 }
+
