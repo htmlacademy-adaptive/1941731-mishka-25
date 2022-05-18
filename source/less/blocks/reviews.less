@@ -1,11 +1,19 @@
 .reviews{
+  @media (min-width: @tablet-width) and (max-width: @desktop-width){
+    background-image: url("../img/review_background.png");
+    background-repeat: no-repeat;
+  }
+}
+.reviews__container{
   @media (min-width: @tablet-width){
     display:grid;
     grid-template-columns: 1fr 175px;
+  }
+  @media (min-width: @desktop-width){
     background-image: url("../img/review_background.png");
     background-repeat: no-repeat;
-
   }
+
   margin-top: 58px;
 }
 .reviews__link{
