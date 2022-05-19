@@ -1,3 +1,21 @@
 .main-footer {
+
   background-color: @seashell;
+
+
+}
+.main-footer__logo-tablet{
+  display:none;
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+.main-footer__container{
+  padding: 25px 30px;
+  @media (min-width: @tablet-width) {
+    display:flex;
+    justify-content: space-between;
+    padding-top: 52px;
+    padding: 50px 50px;
+  }
 }

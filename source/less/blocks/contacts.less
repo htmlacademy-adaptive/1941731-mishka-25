@@ -1,15 +1,60 @@
 .contacts {
-  margin: 0;
+  margin-top: 71px;
   position: relative;
   color: @tundora;
-}
+  @media (min-width: @tablet-width){
+   margin-top: 131px;
+  }
+  @media (min-width: @desktop-width){
+    margin-left:  auto;
+    margin-right: auto;
+    max-width: 1050px;
+    display:grid;
+    grid-template-columns: 50px 291px 527px;
+    column-gap: 30px;
+    margin-bottom: 105px;
+  }
 
+}
+.contacts__list{
+  @media (min-width: @tablet-width){
+    display:flex;
+  }
+  @media (min-width: @desktop-width){
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display:block;
+  }
+
+}
+.contacts__title-container{
+  justify-content: space-between;
+  display:flex;
+  @media (min-width: @desktop-width){
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+}
+.contacts__flag{
+  display:none;
+  @media (min-width: @tablet-width){
+    display:block;
+  }
+  @media (min-width: @desktop-width){
+    order:1;
+  }
+}
 .contacts__title {
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   margin-top: 38px;
   margin-bottom: 0;
+  @media (min-width: @desktop-width){
+    order:2;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .contacts__item {
@@ -18,6 +63,10 @@
   display: flex;
   margin-top: 28px;
   margin-bottom: 0;
+  @media (min-width: @tablet-width){
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .contacts__email-link {
@@ -29,10 +78,38 @@
 .contacts__map {
   margin-top: 62px;
   margin-bottom: 0;
+  width: 100vw;
+  @media (min-width: @desktop-width){
+    margin: 0;
+    max-width: 528px;
+    grid-column: 3/4;
+    grid-row: 1/4;
+    max-height: 457px;
+  }
 }
 
 .contacts__pin {
   position: absolute;
-  bottom: 214px;
-  left: 137px;
+  bottom: 383px;
+  left: 167px;
+  @media (min-width: @desktop-width){
+    grid-column: 3/4;
+  }
 }
+.contacts__link{
+  width: 100%;
+  margin: 0;
+}
+.contacts__link-container{
+  margin: 40px 0;
+  @media (min-width: @tablet-width){
+    width: 226px;
+    margin: 55px auto;
+   }
+  @media (min-width: @desktop-width){
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin: 38px auto 0 auto;
+  }
+}
+
