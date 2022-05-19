@@ -99,7 +99,7 @@
   margin-bottom: 0;
 }
 .contacts {
-  margin: 0;
+  margin-top: 71px;
   position: relative;
   color: #444444;
 }
@@ -215,7 +215,7 @@
   margin: 0;
 }
 .contacts__link-container {
-  margin: 40px 30px;
+  margin: 40px 0;
 }
 @media (min-width: 768px) {
   .contacts__link-container {
@@ -789,7 +789,7 @@
 }
 .button {
   display: inline-block;
-  padding: 16px 0;
+  padding: 16px 0 32px 0;
   text-align: center;
   border: 2px solid #444444;
   height: 20px;
@@ -799,6 +799,7 @@
   text-decoration: none;
   color: #444444;
   text-transform: uppercase;
+  box-sizing: border-box;
 }
 .no-markers-list {
   list-style-type: none;
@@ -850,9 +851,6 @@
   .user-list__container {
     display: block;
   }
-}
-.container {
-  margin: 0 30px;
 }
 @media (min-width: 768px) {
   .container {
