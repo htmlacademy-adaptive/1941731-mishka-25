@@ -5,14 +5,31 @@
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
+  @media (max-width: @mobile-width-only){
+    background-image: url("../img/hero_mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+  }
+  @media (min-width: @tablet-width){
+    height: 758px;
+   }
 }
-.catalog-preview{
-  background-image: url("../img/hero_mobile.jpg");
+.catalog-preview__wrapper{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   @media (min-width: @tablet-width){
     background-image: url("../img/hero_tablet.jpg");
    }
    @media (min-width: @desktop-width){
     background-image: url("../img/hero_desktop.jpg");
+   }
+}
+.catalog-preview__wrapper.container{
+  @media (min-width: @desktop-width){
+    max-width: 100vw;
    }
 }
 .catalog-preview__list {
