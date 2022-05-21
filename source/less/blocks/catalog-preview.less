@@ -6,28 +6,32 @@
   font-size: 27px;
   line-height: 30px;
 }
-
-.catalog-preview__list {
-  .no-markers-list;
-  margin: 0;
-  @media (min-width: @tablet-width){
-    display:flex;
-    margin: 0 auto;
-    max-width: 668px;
-  }
-  @media (min-width: @desktop-width){
-    display:flex;
-    margin: 0 auto;
-    max-width: 1050px;
-  }
-}
-.catalog-preview__wrapper{
+.catalog-preview{
   background-image: url("../img/hero_mobile.jpg");
   @media (min-width: @tablet-width){
     background-image: url("../img/hero_tablet.jpg");
    }
    @media (min-width: @desktop-width){
     background-image: url("../img/hero_desktop.jpg");
+   }
+}
+.catalog-preview__list {
+  .no-markers-list;
+  margin: 0;
+  @media (min-width: @tablet-width){
+    display:flex;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  @media (min-width: @tablet-width){
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.catalog-preview__wrapper.container{
+  @media (max-width: @mobile-width-only){
+    padding:0;
    }
 }
 .catalog-preview__link {

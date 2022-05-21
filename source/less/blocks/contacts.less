@@ -19,11 +19,12 @@
 .contacts__list{
   @media (min-width: @tablet-width){
     display:flex;
+    justify-content: space-between;
   }
   @media (min-width: @desktop-width){
     grid-column: 2/3;
     grid-row: 2/3;
-    display:block;
+    display: block;
   }
 
 }
@@ -63,12 +64,15 @@
   display: flex;
   margin-top: 28px;
   margin-bottom: 0;
+  justify-content: space-between;
   @media (min-width: @tablet-width){
     font-size: 17px;
     line-height: 30px;
   }
 }
-
+.contacts__value{
+  margin-inline-start: 0;
+}
 .contacts__email-link {
   color: @tundora;
   text-decoration: none;
@@ -79,6 +83,10 @@
   margin-top: 62px;
   margin-bottom: 0;
   width: 100vw;
+  margin-left: -30px;
+  @media (min-width: @tablet-width){
+    margin-left: -50px;
+  }
   @media (min-width: @desktop-width){
     margin: 0;
     max-width: 528px;
