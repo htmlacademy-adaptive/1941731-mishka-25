@@ -12,6 +12,12 @@
     background-position: center;
   }
   @media (min-width: @tablet-width){
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 154px;
+    padding-bottom: 372px;
+    max-width: 700px;
+    margin: 0 auto
    }
    @media (min-width: @desktop-width){
     font-size: 53px;
@@ -29,6 +35,7 @@
   background-position: center;
   @media (min-width: @tablet-width){
     background-image: url("../img/hero_tablet.jpg");
+    height: 745px;
    }
    @media (min-width: @desktop-width){
     background-image: url("../img/hero_desktop.jpg");
@@ -65,7 +72,6 @@
   line-height: 24px;
   color: @white;
   text-decoration: none;
-  z-index: 5;
   &:focus .catalog-preview__image{
     opacity: 0.3;
   }
@@ -86,6 +92,7 @@
     margin-left: 0;
   }
   &:hover{
+    position: relative;
     transform:translateY(-5px);
     height: 124px;
   }
