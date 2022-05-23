@@ -10,11 +10,18 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
   }
   @media (min-width: @tablet-width){
-    height: 758px;
    }
+   @media (min-width: @desktop-width){
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 158px;
+    padding-bottom: 354px;
+    width: 700px;
+    margin: 0 auto;
+   }
+
 }
 .catalog-preview__wrapper{
   background-repeat: no-repeat;
@@ -25,6 +32,7 @@
    }
    @media (min-width: @desktop-width){
     background-image: url("../img/hero_desktop.jpg");
+    height: 743px;
    }
 }
 .catalog-preview__wrapper.container{
@@ -55,22 +63,33 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
-
   color: @white;
   text-decoration: none;
+  z-index: 5;
+  &:focus .catalog-preview__image{
+    opacity: 0.3;
+  }
 }
+
 .catalog-preview__container{
+  height: 100%;
   display: flex;
   padding: 24px 30px 31px 30px;
 }
 
 .catalog-preview__item {
   width: 100vw;
-
+  height: 119px;
+  position: relative;
   @media (min-width:@tablet-width){
     width:50%;
     margin-left: 0;
   }
+  &:hover{
+    transform:translateY(-5px);
+    height: 124px;
+  }
+
 }
 .catalog-preview__image{
   margin-left:auto;

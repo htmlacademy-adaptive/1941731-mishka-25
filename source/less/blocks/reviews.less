@@ -1,8 +1,10 @@
 .reviews{
+  padding-bottom: 45px;
   @media (min-width: @tablet-width) and (max-width: @desktop-width){
     background-image: url("../img/review_background.png");
     background-repeat: no-repeat;
   }
+
 }
 .reviews__container{
   @media (min-width: @tablet-width){
@@ -19,7 +21,6 @@
 .reviews__link{
   width: 100%;
   margin-top: 36px;
-  margin-bottom: 45px;
   @media (min-width: @tablet-width){
     grid-column: 2/3;
     grid-row: 1/2;
@@ -86,8 +87,17 @@
 .reviews__switch {
   background-color: @white;
   border: 0;
-  padding: 0;
-  &:nth-child(2){
-    margin-left:37px;
+  padding: 13px 0;
+  width: 50%;
+  border: 1px solid rgba(0,0,0,0.6);
+  cursor: pointer;
+  @media (min-width: @tablet-width){
+    border: 0;
+  }
+  &:hover{
+    opacity: 0.6;
+  }
+  &:active{
+    opacity: 0.3;
   }
 }

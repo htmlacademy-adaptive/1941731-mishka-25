@@ -2,6 +2,7 @@
   margin-top: 71px;
   position: relative;
   color: @tundora;
+  padding-top: 38px;
   @media (min-width: @tablet-width){
    margin-top: 131px;
   }
@@ -49,7 +50,6 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  margin-top: 38px;
   margin-bottom: 0;
   @media (min-width: @desktop-width){
     order:2;
@@ -72,11 +72,18 @@
 }
 .contacts__value{
   margin-inline-start: 0;
+  width: 57%;
 }
 .contacts__email-link {
   color: @tundora;
   text-decoration: none;
   border-bottom: 1px solid  @downy;
+  &:hover{
+    color: @puerto-rico;
+  }
+  &:active{
+    border:0;
+  }
 }
 
 .contacts__map {
