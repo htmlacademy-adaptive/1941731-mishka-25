@@ -2,8 +2,8 @@
   font-weight: 700;
 }
 .about-us__text{
-  margin-top: 20px;
   margin-bottom: 0;
+  margin-top: 0;
   @media (min-width: @tablet-width){
     margin-top: 0;
    }
@@ -30,17 +30,18 @@
   @media (min-width: @tablet-width){
     display: grid;
     align-items: end;
-    row-gap: 60px;
-    column-gap: 70px;
+    row-gap: 111px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-auto-flow: column;
-    margin-top: 57px;
+    margin-top: 97.5px;
   }
 
 }
 
 .about-us__item {
+  background-repeat: no-repeat;
+  position: relative;
   @media (min-width: @tablet-width){
     height: 100%;
     font-size: 20px;
@@ -48,39 +49,118 @@
   line-height: 20px;
   font-size: 17px;
   width: 100%;
-  @media (min-width: @tablet-width){
+  @media (max-width: @mobile-width-only){
+    margin-top: 82px;
   }
 }
-.about-us__icon{
-  position: relative;
-}
-@media (min-width: @tablet-width){
-  .about-us__icon.about-us__flower{
+
+.about-us__flower::before{
+  @media (max-width: @mobile-width-only){
     left: 8px;
-    bottom: 18px;
+    top: -53px;
   }
-  .about-us__icon.about-us__money{
-    left: 0;
-    bottom: 26px;
+  @media (min-width: @tablet-width){
+    left: 8px;
+    top: -59px;
   }
-  .about-us__icon.about-us__heart{
-    left: 9px;
-    bottom: 21px;
+  @media (min-width: @desktop-width){
+    left: 8px;
+    top: -62px;
   }
-  .about-us__icon.about-us__ball{
-    left: 2px;
-    bottom: 19px;
+  background-image: url("../img/about_us_icon_1.svg ");
+  position: absolute;
+  width: 33px;
+  height: 38px;
+  content: "";
+}
+.about-us__money::before{
+  @media (max-width: @mobile-width-only){
+    top: -63px;
   }
-  .about-us__icon.about-us__rocket{
+  @media (min-width: @tablet-width){
+    top: -67px;
+  }
+  @media (min-width: @desktop-width){
+    top: -67px;
+  }
+  background-image: url("../img/about_us_icon_2.svg ");
+  position: absolute;
+  height: 27px;
+  width: 47px;
+  content: "";
+}
+.about-us__heart::before{
+  @media (max-width: @mobile-width-only){
+    left: 7px;
+    top: -58px;
+  }
+  @media (min-width: @tablet-width){
+    left: 7px;
+    top: -62px;
+  }
+  @media (min-width: @desktop-width){
+    left: 7px;
+    top: -62px;
+  }
+  background-image: url("../img/about_us_icon_3.svg ");
+  position: absolute;
+  width: 34px;
+  height: 27px;
+  content: "";
+}
+.about-us__ball::before{
+  @media (max-width: @mobile-width-only){
+    top: -60px;
+  }
+  @media (min-width: @tablet-width){
+    top: -60px;
+  }
+  @media (min-width: @desktop-width){
+    top: -59px;
+  }
+  background-image: url("../img/about_us_icon_4.svg ");
+  position: absolute;
+  width: 35px;
+  height: 34px;
+  content: "";
+}
+.about-us__rocket::before{
+  @media (max-width: @mobile-width-only){
+    left: -6px;
+    top: -63px;
+  }
+  @media (min-width: @tablet-width){
     left: -9px;
-    bottom: 28px;
+    top: -69px;
   }
-  .about-us__icon.about-us__present{
-    left: 0;
-    bottom: 21px;
+  @media (min-width: @desktop-width){
+    left: -9px;
+    top: -69px;
+  }
+  background-image: url("../img/about_us_icon_5.svg ");
+  position: absolute;
+  width: 55px;
+  height: 23px;
+  content: "";
+}
+.about-us__present::before{
+  @media (max-width: @mobile-width-only){
+    top: -57px;
+  }
+  @media (min-width: @tablet-width){
+    top: -62px;
+  }
+  @media (min-width: @desktop-width){
+    top: -62px;
   }
 
+  background-image: url("../img/about_us_icon_6.svg ");
+  position: absolute;
+  width: 33px;
+  height: 32px;
+  content: "";
 }
+
 
 
 
