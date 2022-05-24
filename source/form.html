@@ -9,7 +9,7 @@
 <body class="page__body">
   <header class="main-header container">
     <nav class="main-nav main-nav--closed">
-      <a class="main-header__logo logo">
+      <a class="main-header__logo logo" href="index.html">
         <img class="main-header__logo-mobile" src="img/mishka_logo_mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
         <img class="main-header__logo-tablet" src="img/mishka_logo_tablet.svg" width="113" height="46" alt="Интернет-магазин «Мишка»">
       </a>
@@ -17,7 +17,7 @@
         <span class="visually-hidden">Открыть меню</span>
         <img class="main-nav__menu-img" src="img/menu_icon.svg" width="20" height="14" alt="Открыть меню">
       </button>
-      <a class="main-nav__logo logo">
+      <a class="main-nav__logo logo" href="index.html">
         <img class="main-nav__logo-desktop" src="img/mishka_logo_desktop.svg" width="149" height="72" alt="Интернет-магазин «Мишка»">
       </a>
       <ul class="main-nav__list site-list">
@@ -80,13 +80,15 @@
         <div class="form__fieldset container">
           <h3 class="form__legend">тип</h3>
 
-          <label class="form__label">
-              <input class="form__radio-input" type="radio" name="product-category" checked>
+          <label class="form__label form__label--radio">
+              <input class="form__radio-input visually-hidden" type="radio" name="product-category" checked>
+              <span class="form__radio-mark"></span>
               Аксесуар для интерьера
           </label>
 
-          <label class="form__label">
-              <input class="form__radio-input" type="radio" name="product-category">
+          <label class="form__label form__label--radio">
+              <input class="form__radio-input visually-hidden" type="radio" name="product-category">
+              <span class="form__radio-mark"></span>
               Детская игрушка
           </label>
         </div>
@@ -96,33 +98,39 @@
         <div class="form__fieldset container">
           <h3 class="form__legend">цвет</h3>
           <div class="form__label-container">
-            <label class="form__label form__label-checkbox">
-              <input class="form__checkbox-input" type="checkbox" name="white" checked>
+            <label class="form__label form__label--checkbox">
+              <input class="form__checkbox-input visually-hidden" type="checkbox" name="white" checked>
+              <span class="form__checkbox-mark"></span>
               Белый
             </label>
 
-            <label class="form__label form__label-checkbox">
-              <input class="form__checkbox-input" type="checkbox" name="grey" checked>
+            <label class="form__label form__label--checkbox">
+              <input class="form__checkbox-input visually-hidden" type="checkbox" name="grey" checked>
+              <span class="form__checkbox-mark"></span>
               Серый
             </label>
 
-            <label class="form__label form__label-checkbox">
-              <input class="form__checkbox-input" type="checkbox" name="tiffany">
+            <label class="form__label form__label--checkbox">
+              <input class="form__checkbox-input visually-hidden" type="checkbox" name="tiffany">
+              <span class="form__checkbox-mark"></span>
               Тиффани
             </label>
 
-            <label class="form__label form__label-checkbox">
-              <input class="form__checkbox-input" type="checkbox" name="black">
+            <label class="form__label form__label--checkbox">
+              <input class="form__checkbox-input visually-hidden" type="checkbox" name="black">
+              <span class="form__checkbox-mark"></span>
               Черный
             </label>
 
-            <label class="form__label form__label-checkbox">
-              <input class="form__checkbox-input" type="checkbox" name="pink">
+            <label class="form__label form__label--checkbox">
+              <input class="form__checkbox-input visually-hidden" type="checkbox" name="pink">
+              <span class="form__checkbox-mark"></span>
               Розовый
             </label>
 
-            <label class="form__label form__label-checkbox">
-              <input class="form__checkbox-input" type="checkbox" name="orange">
+            <label class="form__label form__label--checkbox">
+              <input class="form__checkbox-input visually-hidden" type="checkbox" name="orange">
+              <span class="form__checkbox-mark"></span>
               Оранжевый
             </label>
           </div>
@@ -186,7 +194,7 @@
 
   <footer class="main-footer">
     <div class="container main-footer__container">
-      <a class="main-footer__link logo">
+      <a class="main-footer__link logo" href="index.html">
         <img class="main-footer__logo-tablet" src="img/mishka_logo_mobile.svg" width="101" height="34" alt="Интернет-магазин «Мишка»">
       </a>
       <section class="social-links">

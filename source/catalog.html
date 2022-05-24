@@ -7,7 +7,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
-  <div class="modal visually-hidden">
+  <div class="modal">
     <div class="modal__content">
       <h2 class="modal__name">Добавить в корзину</h2>
       <p class="modal__description">Выберите размер:</p>
@@ -15,6 +15,7 @@
         <li class="modal__item">
           <label class="modal__label">
             <input class="modal__radio-input" type="radio" name="product-category" checked>
+            <span class="modal__radio-mark"></span>
             S
           </label>
         </li>
@@ -184,7 +185,7 @@
 
   <footer class="main-footer">
     <div class="container main-footer__container">
-      <a class="main-footer__link logo">
+      <a class="main-footer__link logo" href="index.html">
         <img class="main-footer__logo-tablet" src="img/mishka_logo_mobile.svg" width="101" height="34" alt="Интернет-магазин «Мишка»">
       </a>
       <section class="social-links">

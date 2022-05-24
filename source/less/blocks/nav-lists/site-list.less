@@ -1,7 +1,6 @@
 .site-list{
-  @media (max-width: @mobile-width-only){
+  @media (max-width: @mobile-width-only) and (min-width: @tablet-width){
     display: block;
-
   }
   @media (min-width: @tablet-width){
   display:flex;
@@ -9,7 +8,7 @@
   order:2;
   font-size: 15px;
   line-height: 24px;
-  margin-top: 20px;
+  margin-top: 21px;
   }
   @media (min-width: @desktop-width){
     order:1;
@@ -23,7 +22,7 @@
   padding-left: 76px;
   }
   @media (min-width: @tablet-width){
-    padding-right: 38px;
+    padding-right: 19px;
   }
   @media (min-width: @desktop-width){
     padding-right: 72px;

@@ -84,7 +84,6 @@
   flex-wrap: wrap;
 }
 .form__label-checkbox{
-
   width: 100%;
   @media (min-width: @tablet-width) {
     width: 50%
@@ -106,6 +105,7 @@
 }
 
 .form__label {
+  position: relative;
   @media (min-width: @tablet-width) {
     grid-column: 2/3;
     margin-top: 0;
@@ -120,6 +120,21 @@
   line-height: 18px;
   margin-bottom: 0;
   margin-top: 24px;
+  &--radio{
+    padding-left: 80px;
+    padding-bottom: 58px;
+  }
+  &--checkbox{
+    width: 100%;
+    @media (min-width: @tablet-width) {
+      width: 50%
+    }
+    @media (min-width: @desktop-width) {
+      width: 33%;
+    }
+    padding-left: 80px;
+    padding-bottom: 58px;
+  }
 }
 .form__label-name{
   display:flex;
@@ -134,6 +149,13 @@
   line-height: 18px;
   font-family: @fonts;
   background-color: transparent;
+  &:hover{
+    border-color: @downy-border;
+  }
+  &:focus{
+    border-color: @downy-border;
+    outline: 0;
+  }
 }
 .form__textarea{
   min-height: 142px;
@@ -146,5 +168,69 @@
   border-left: 0;
   border-right: 0;
 }
-
-
+.form__radio-mark{
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  border: 2px solid @tundora;
+  border-radius: 50%;
+  top: -18px;
+  left: 0;
+}
+.form__radio-input:checked + .form__radio-mark::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: @downy-border;
+  content: "";
+}
+.form__radio-mark:hover {
+  border: 2px solid @downy-border;
+}
+.form__radio-input:active +.form__radio-mark::before{
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+.form__checkbox-mark{
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  border: 2px solid @tundora;
+  top: -18px;
+  left: 0;
+}
+.form__checkbox-input:checked + .form__checkbox-mark{
+  content: "";
+  &::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 12px;
+    transform: translate(-50%, -50%);
+    width: 11px;
+    height: 2px;
+    background-color: @downy-border;;
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 18px;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 2px;
+    background-color: @downy-border;;
+    transform: rotate(-45deg);
+  }
+}
+.form__checkbox-mark:hover {
+  border: 2px solid @downy-border;
+}
+.form__checkbox-input:focus +.form__checkbox-mark{
+border: 2px solid rgba(0, 0, 0, 0.3);
+}

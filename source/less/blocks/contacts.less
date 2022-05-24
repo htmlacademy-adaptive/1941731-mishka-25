@@ -1,19 +1,35 @@
-.contacts {
-  margin-top: 71px;
+
+.contacts .container {
   position: relative;
   color: @tundora;
-  padding-top: 38px;
+  @media (max-width: @mobile-width-only){
+    background-image: url("../img/zigzag_line_desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding-top: 45px;
+  }
   @media (min-width: @tablet-width){
-   margin-top: 131px;
+    background-image: url("../img/zigzag_line_desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin-top: 67px;
+    padding-top: 50px;
   }
   @media (min-width: @desktop-width){
     width:fit-content;
     margin-left:  auto;
     max-width: 1050px;
     display:grid;
-    grid-template-columns: 293px 50%;
-    column-gap: 56px;
+    grid-template-columns: 295px 50%;
+    column-gap: 54px;
+    background-image: url("../img/zigzag_line_desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top;
+    padding-top: 94px;
+    padding-left: 175px;
     margin-bottom: 105px;
+    margin-top: 49px;
   }
 
 }
@@ -21,39 +37,38 @@
   @media (min-width: @tablet-width){
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 51px;
     margin: 0;
+    margin-top: 9px;
   }
   @media (min-width: @desktop-width){
     grid-column: 1/2;
     grid-row: 2/3;
-    display: block;
-
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: -20px;
+    row-gap: 2px;
   }
 
 }
-.contacts__flag{
-  display:none;
-  @media (min-width: @tablet-width){
-    display:block;
-  }
-  @media (min-width: @desktop-width){
-    order:1;
-  }
-}
+
 .contacts__title {
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 0;
+  @media (max-width: @mobile-width-only) and (max-width: @tablete-width){
+    margin-top: 45px;
+  }
   @media (min-width: @desktop-width){
     font-size: 53px;
     line-height: 57px;
     grid-column: 1/2;
+    margin-top: 79px;
   }
   &:before{
     @media (min-width: @tablet-width){
-      right: 50px;
+      top: 64px;
+      right: 53px;
       background-image: url("../img/flag.svg");
       position: absolute;
       width: 47px;
@@ -61,23 +76,30 @@
       content: "";
     }
     @media (min-width: @desktop-width){
-      left: -111px;
+      left: 63px;
+      top: 156px;
     }
   }
 }
 
 .contacts__item {
+  @media (max-width: @mobile-width-only){
+    margin-top: 29px;
+  }
   font-size: 14px;
   line-height: 30px;
-  margin-top: 28px;
   margin-bottom: 0;
   display: grid;
-  grid-template-columns: 75px 1fr;
+  grid-template-columns: 78px 1fr;
   @media (min-width: @tablet-width){
     font-size: 17px;
     line-height: 30px;
     width: 100%;
     margin-top: 40px;
+
+  }
+  @media (min-width: @desktop-width){
+    margin-top: 0;
   }
 }
 .contacts__value{
@@ -86,7 +108,10 @@
 .contacts__email-link {
   color: @tundora;
   text-decoration: none;
-  border-bottom: 1px solid  @downy;
+  @media (min-width: @desktop-width){
+    border-bottom: 1px solid  @downy;
+  }
+  padding-bottom: 8px;
   &:hover{
     color: @puerto-rico;
   }
@@ -98,12 +123,17 @@
 .contacts__map {
   margin-top: 62px;
   margin-bottom: 0;
-  width: 100vw;
-  margin-left: -30px;
+  display:block;
+  @media (max-width: @mobile-width-only){
+    width: 100vw;
+    margin-left: -30px;
+    height: 454px;
+  }
   @media (min-width: @tablet-width){
     margin-left: -50px;
     margin-top: 49px;
-    max-height: 457px;
+    width: 100vw;
+    height: 457px;
   }
   @media (min-width: @desktop-width){
     margin: 0;
@@ -112,6 +142,10 @@
     grid-row: 1/4;
     max-height: 457px;
   }
+}
+.contacts iframe {
+  border: none;
+  display: block;
 }
 
 .contacts__pin {
@@ -125,17 +159,20 @@
 .contacts__link{
   width: 100%;
   margin: 0;
+  @media (min-width: @desktop-width){
+    padding: 0 27px;
+  }
 }
 .contacts__link-container{
   margin: 40px 0;
   @media (min-width: @tablet-width){
-    width: 226px;
+    width: 230px;
     margin: 55px auto;
    }
   @media (min-width: @desktop-width){
   grid-column: 1/2;
   grid-row: 3/4;
-  margin: 38px 70px 0 auto;
+  margin: auto 0 0 0;
   }
 }
 
