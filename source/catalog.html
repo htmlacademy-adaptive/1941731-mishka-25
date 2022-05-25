@@ -234,5 +234,38 @@
       </section>
     </div>
   </footer>
+  <div class="modal">
+    <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+      <h2 class="modal__name">Добавить в корзину</h2>
+      <p class="modal__description">Выберите размер:</p>
+      <ul class="modal__list">
+        <li class="modal__item">
+          <label class="modal__label">
+            <input class="modal__radio-input visually-hidden" type="radio" name="product-size" value="S" checked>
+            <span class="modal__radio-mark"></span>
+            <p class="modal__value">S</p>
+          </label>
+        </li>
+        <li class="modal__item">
+          <label class="modal__label">
+            <input class="modal__radio-input visually-hidden" type="radio" value="M" name="product-size">
+            <span class="modal__radio-mark"></span>
+            <p class="modal__value">M</p>
+          </label>
+        </li>
+        <li class="modal__item">
+          <label class="modal__label">
+            <input class="modal__radio-input visually-hidden" type="radio" value="L" name="product-size">
+            <span class="modal__radio-mark"></span>
+            <p class="modal__value">L</p>
+          </label>
+        </li>
+      </ul>
+      <button class="button modal__button">
+        <span class="visually-hidden">Добавить товар в корзину</span>
+        Добавить
+      </button>
+   </form>
+  </div>
 </body>
 </html>

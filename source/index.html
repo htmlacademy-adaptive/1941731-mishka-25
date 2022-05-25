@@ -8,35 +8,6 @@
   <link rel="icon" href="favicon.ico">
 </head>
 <body class="page__body">
-  <div class="modal visually-hidden">
-    <div class="modal__content">
-      <h2 class="modal__name">Добавить в корзину</h2>
-      <p class="modal__description">Выберите размер:</p>
-      <ul class="modal__list">
-        <li class="modal__item">
-          <label class="modal__label">
-            <input class="modal__radio-input" type="radio" name="product-category" checked>
-            S
-          </label>
-        </li>
-        <li class="modal__item">
-          <label class="modal__label">
-            <input class="modal__radio-input" type="radio" name="product-category">
-            M
-          </label>
-        </li>
-        <li class="modal__item">
-          <label class="modal__label">
-            <input class="modal__radio-input" type="radio" name="product-category">
-            L
-          </label>
-        </li>
-      </ul>
-      <button class="button modal__button">
-        Добавить
-      </button>
-    </div>
-  </div>
   <header class="main-header container">
       <nav class="main-nav main-nav--closed">
         <a class="main-header__logo logo" href="index.html">
@@ -218,11 +189,13 @@
           </ul>
             <div class="reviews__wrapper">
               <button type="button" class="reviews__switch">
+                <span class="visually-hidden">Предыдущий отзыв</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="26" viewBox="0 0 50 26" fill="none">
                   <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black"/>
                 </svg>
               </button>
               <button type="button" class="reviews__switch">
+                <span class="visually-hidden">Следующий отзыв</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="26" viewBox="0 0 50 26" fill="none">
                   <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black"/>
                 </svg>
@@ -309,5 +282,38 @@
     </div>
   </footer>
   <script src="js/script.js"></script>
+  <div class="modal visually-hidden">
+    <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+      <h2 class="modal__name">Добавить в корзину</h2>
+      <p class="modal__description">Выберите размер:</p>
+      <ul class="modal__list">
+        <li class="modal__item">
+          <label class="modal__label">
+            <input class="modal__radio-input visually-hidden" type="radio" name="product-size" value="S" checked>
+            <span class="modal__radio-mark"></span>
+            <p class="modal__value">S</p>
+          </label>
+        </li>
+        <li class="modal__item">
+          <label class="modal__label">
+            <input class="modal__radio-input visually-hidden" type="radio" value="M" name="product-size">
+            <span class="modal__radio-mark"></span>
+            <p class="modal__value">M</p>
+          </label>
+        </li>
+        <li class="modal__item">
+          <label class="modal__label">
+            <input class="modal__radio-input visually-hidden" type="radio" value="L" name="product-size">
+            <span class="modal__radio-mark"></span>
+            <p class="modal__value">L</p>
+          </label>
+        </li>
+      </ul>
+      <button class="button modal__button">
+        <span class="visually-hidden">Добавить товар в корзину</span>
+        Добавить
+      </button>
+   </form>
+  </div>
 </body>
 </html>
