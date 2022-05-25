@@ -1,6 +1,16 @@
 .main-footer {
   background-color: @seashell;
   width: 100%;
+  padding-top: 28px;
+  padding-bottom: 23px;
+
+  @media (min-width: @tablet-width){
+    padding-top: 47px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-top: 45px;
+    padding-bottom: 59px;
+  }
 }
 .main-footer__logo-tablet{
   display:none;
@@ -13,7 +23,8 @@
   @media (min-width: @tablet-width) {
     display:flex;
     justify-content: space-between;
-    padding-top: 52px;
-    padding: 50px 50px;
+    align-items: center;
+    padding-top: 45px;
+    padding: 45px 50px;
   }
 }

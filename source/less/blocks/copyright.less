@@ -2,8 +2,19 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
+  margin-right: 27px;
+
 }
 .copyright{
   display:flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: @mobile-width-only){
+    width: 180px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+}
+.copyright__link{
+  height: 35px;
 }

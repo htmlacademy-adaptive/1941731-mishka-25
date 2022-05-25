@@ -1,9 +1,24 @@
 .news-list{
   @media (min-width: @desktop-width){
     display:flex;
-    align-items: center;
+    align-items: flex-end;
     order:4;
     font-size: 15px;
     line-height: 24px;
+    width: 400px
     }
+}
+
+.news-list__item{
+  @media (min-width: @tablet-width){
+    padding-right: 30px;
+  }
+  @media (min-width: @desktop-width){
+    padding-right: 61px;
+  }
+
+}
+.news-list__link{
+  font-size: 15px;
+  line-height: 24px;
 }
