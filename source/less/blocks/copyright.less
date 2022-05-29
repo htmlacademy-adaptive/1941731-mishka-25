@@ -4,17 +4,35 @@
   line-height: 18px;
   margin-right: 27px;
 
+  @media (min-width: @desktop-width) {
+    margin-top: 12px;
+  }
 }
-.copyright{
-  display:flex;
+
+.copyright {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: @mobile-width-only){
+
+  @media (max-width: @mobile-width-only) {
     width: 180px;
     margin: 0 auto;
     margin-top: 15px;
   }
+
+  .copyright__icon {
+    color: @downy;
+  }
+
+  &:hover .copyright__icon {
+    color: @puerto-rico;
+  }
+
+  &:active .copyright__icon {
+    opacity: 0.3;
+  }
 }
-.copyright__link{
+
+.copyright__link {
   height: 35px;
 }
