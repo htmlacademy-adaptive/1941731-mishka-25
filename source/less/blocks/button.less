@@ -1,9 +1,16 @@
 .button {
   display: inline-block;
+<<<<<<< HEAD
   padding: 16px 0 16px 0;
   text-align: center;
   border: 2px solid @tundora;
   min-height: 20px;
+=======
+  padding: 16px 0 32px 0;
+  text-align: center;
+  border: 2px solid @tundora;
+  height:20px;
+>>>>>>> b61aa640b17c8376b8f14234ae932d537247d722
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -12,6 +19,7 @@
   text-transform: uppercase;
   box-sizing: border-box;
   background-color: @white;
+<<<<<<< HEAD
   font-family: @fonts;
 
   &:hover {
@@ -26,4 +34,20 @@
   @media (min-width: @tablet-width) {
     font-size: 17px;
   }
+=======
+  &:hover{
+    color: @white;
+    background-color: @tundora;
+  }
+  &:active{
+    color: rgba(255,255,255,0.3)
+  }
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
+  @media (max-width: @mobile-width-only){
+  font-size: 17px;
+  line-height: 16px;
+  }
+>>>>>>> b61aa640b17c8376b8f14234ae932d537247d722
 }
