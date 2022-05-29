@@ -5,19 +5,21 @@
   flex-direction: column;
   position: relative;
 
-  @media (max-width: @mobile-width-only){
+  @media (max-width: @mobile-width-only) {
     margin: 30px 30px 57px 30px;
     padding: 0;
     border: 1px solid @gallery;
   }
-  @media (min-width: @tablet-width){
+
+  @media (min-width: @tablet-width) {
     margin-top: 53px;
     padding-bottom: 47px;
     margin-bottom: 62px;
-   }
+  }
+
   @media (min-width: @desktop-width) {
     margin-top: 56px;
-    display:grid;
+    display: grid;
     grid-template-columns: 65% 24%;
     column-gap: 7.5%;
     margin-bottom: 105px;
@@ -33,18 +35,31 @@
   line-height: 24px;
   margin: 0;
   height: fit-content;
-  @media (max-width: @mobile-width-only){
+
+  @media (max-width: @mobile-width-only) {
     width: 60%;
     margin-left: 91px;
     margin-top: 24px;
+
+    &::before {
+      background-image: url("../img/camera_icon.svg ");
+      position: absolute;
+      width: 32px;
+      height: 22px;
+      content: "";
+      top: 36px;
+      left: 33px;
+    }
   }
-  @media (min-width: @tablet-width) and (max-width: @desktop-width){
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     order: 2;
     font-size: 20px;
     line-height: 24px;
     margin-left: 107px;
     margin-top: 42px;
-    &::before{
+
+    &::before {
       background-image: url("../img/camera_icon.svg ");
       position: absolute;
       width: 32px;
@@ -53,15 +68,17 @@
       bottom: 227px;
       left: 91px;
     }
-   }
-   @media (min-width: @desktop-width) {
+  }
+
+  @media (min-width: @desktop-width) {
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 97px;
     padding-right: 110px;
     font-size: 20px;
     line-height: 24px;
-    &::before{
+
+    &::before {
       background-image: url("../img/camera_icon.svg ");
       position: absolute;
       width: 32px;
@@ -76,21 +93,42 @@
   margin-top: 26.5px;
   margin-bottom: 0;
   width: 100%;
-  @media (max-width: @mobile-width-only){
+
+  @media (max-width: @mobile-width-only) {
     margin-top: 25px;
     margin-bottom: 0;
   }
+
   @media (min-width: @tablet-width) {
-   margin-top: 0;
-   height: 455px;
-   display: block;
+    margin-top: 0;
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 682.65px;
+    height: 455px;
   }
 }
-.production-process__video-container{
+
+.production-process__play-icon {
+  &:hover {
+    width: 120%;
+    height: 120%;
+  }
+
+  &:active {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+.production-process__video-container {
   position: relative;
+
   @media (min-width: @tablet-width) {
     order: 1;
-   }
+  }
+
   @media (min-width: @desktop-width) {
     grid-column: 1/2;
     grid-row: 1/4;
@@ -109,20 +147,24 @@
   margin-left: auto;
   margin-right: auto;
   height: fit-content;
-  @media (max-width: @mobile-width-only){
+
+  @media (max-width: @mobile-width-only) {
     margin-top: 30px;
+
     & br {
       display: none;
     }
   }
-  @media (min-width: @tablet-width) and (max-width: @desktop-width){
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     max-width: 90%;
     order: 3;
     font-size: 15px;
     line-height: 30px;
     margin-left: 40px;
     margin-top: 24px;
-   }
+  }
+
   @media (min-width: @desktop-width) {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -131,29 +173,35 @@
     margin-bottom: 22px;
     font-size: 15px;
     line-height: 30px;
+
     & br {
       display: none;
     }
+  }
 }
- }
 
-.production-process__link{
+.production-process__link {
   width: 100%;
+  padding-bottom: 13px;
 }
-.production-process__link-container{
+
+.production-process__link-container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  @media (max-width: @mobile-width-only){
-    margin: 41px 34px 33px 34px;
+
+  @media (max-width: @mobile-width-only) {
+    margin: 41px auto 33px auto;
     width: 192px;
   }
-  @media (min-width: @tablet-width) and (max-width: @desktop-width){
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     width: 87.5%;
     order: 4;
     margin-top: 39px;
-   }
-   @media (min-width: @desktop-width) {
+  }
+
+  @media (min-width: @desktop-width) {
     margin-bottom: 34px;
     grid-column: 2/3;
     grid-row: 3/4;
@@ -172,9 +220,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  @media (max-width: @mobile-width-only){
+
+  @media (max-width: @mobile-width-only) {
     top: 56%;
     left: 50%;
   }
 }
-

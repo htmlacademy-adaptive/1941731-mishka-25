@@ -1,15 +1,29 @@
-.social-links{
-  @media (max-width: @mobile-width-only){
+.social-links {
+  @media (max-width: @mobile-width-only) {
     border-bottom: 1px @mercury solid;
     padding-bottom: 24px;
   }
 }
 
-.social-links__list{
+.social-links__list {
   .no-markers-list;
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  width: 142px;
+  min-width: 142px;
   margin: 0 auto;
+  max-width: 50%;
+  flex-wrap: wrap;
 }
 
+.social-links__link {
+  color: @thunder;
+
+  &:hover {
+    color: @puerto-rico;
+  }
+
+  &:active {
+    color: @puerto-rico;
+    opacity: 0.3;
+  }
+}
