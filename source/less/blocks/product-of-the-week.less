@@ -1,5 +1,5 @@
 .product-of-the-week {
-  @media (max-width: @mobile-width-only){
+  @media (max-width: @mobile-width-only) {
     padding-top: 31px;
     background-image: url("../img/zigzag_line_desktop.svg");
     background-repeat: no-repeat;
@@ -8,7 +8,8 @@
     position: relative;
     padding-bottom: 5px;
   }
-  @media (min-width: @tablet-width){
+
+  @media (min-width: @tablet-width) {
     color: @tundora;
     background-image: url("../img/zigzag_fill_desktop.svg");
     background-repeat: no-repeat;
@@ -17,10 +18,9 @@
     top: -12px;
     margin-bottom: 115px;
     padding-top: 31px;
-
   }
-  @media (min-width: @desktop-width){
-    padding-top: 53px;
+
+  @media (min-width: @desktop-width) {
     color: @tundora;
     background-image: url("../img/zigzag_fill_desktop.svg");
     background-repeat: no-repeat;
@@ -32,15 +32,17 @@
     padding-top: 31px;
   }
 }
-.product-of-the-week__wrapper.container{
-  @media (min-width: @tablet-width){
-    display:grid;
+
+.product-of-the-week__wrapper.container {
+  @media (min-width: @tablet-width) {
+    display: grid;
     grid-template-columns: 1fr 50%;
     column-gap: 42px;
     margin-top: -32px;
   }
-  @media (min-width: @desktop-width){
-    display:grid;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
     grid-template-columns: 100px 292px 540px;
     padding-left: 32px;
     padding-top: 93px;
@@ -55,23 +57,24 @@
 }
 
 .product-of-the-week__title {
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
     grid-column: 1/3;
     grid-row: 1/2;
     margin-bottom: 49px;
     margin-top: 64px;
-    }
-  @media (min-width: @desktop-width){
+  }
+
+  @media (min-width: @desktop-width) {
     grid-column: 2/4;
     grid-row: 1/2;
-    order:2;
+    order: 2;
     font-size: 53px;
     line-height: 57px;
     font-weight: 700;
     margin-top: 52px;
-    }
+  }
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -79,26 +82,26 @@
   margin-bottom: 0;
   margin-top: 0;
 }
+
 .product-of-the-week__sub-title {
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     grid-column: 2/3;
     grid-row: 1/2;
     margin-right: 13px;
     margin-top: 71px;
-    margin-left:auto;
+    margin-left: auto;
     font-size: 17px;
     line-height: 17px;
     font-weight: 700;
     max-width: 100px;
     text-align: center;
-    }
-  @media (min-width: @desktop-width){
+  }
+
+  @media (min-width: @desktop-width) {
     grid-column: 1/2;
-    margin-left: 0;
-    margin-top: 0;
     margin-left: 13px;
     margin-top: 60px;
-    }
+  }
   text-transform: uppercase;
   font-weight: 700;
   font-size: 17px;
@@ -107,24 +110,29 @@
   margin-bottom: 0;
   margin-top: 3px;
 }
-.product-of-the-week__parameter-name{
-    width: 98px;
+
+.product-of-the-week__parameter-name {
+  width: 98px;
 }
-.product-of-the-week__parameter-value{
+
+.product-of-the-week__parameter-value {
   margin-left: 0;
 }
+
 .product-of-the-week__description {
-  @media (max-width: @tablet-width){
+  @media (max-width: @mobile-width-only) {
     margin-top: 18px;
   }
-  @media (min-width: @tablet-width){
+
+  @media (min-width: @tablet-width) {
     grid-column: 1/2;
     grid-row: 2/3;
     font-size: 17px;
     line-height: 30px;
     margin-top: -12px;
-    }
-  @media (min-width: @desktop-width){
+  }
+
+  @media (min-width: @desktop-width) {
     grid-column: 2/3;
     margin-top: -13px;
   }
@@ -135,19 +143,23 @@
   margin-bottom: 0;
   margin-top: 0;
 }
-.product-of-the-week__characteristics{
+
+.product-of-the-week__characteristics {
   margin: 0;
   margin-top: 21px;
-  @media (min-width: @tablet-width){
+
+  @media (min-width: @tablet-width) {
     grid-column: 1/2;
     grid-row: 3/4;
     margin-top: 41px;
-    }
-  @media (min-width: @desktop-width){
+  }
+
+  @media (min-width: @desktop-width) {
     grid-column: 2/3;
-    margin-top: 57px
+    margin-top: 57px;
   }
 }
+
 .product-of-the-week__item {
   display: flex;
   font-weight: 400;
@@ -155,77 +167,90 @@
   line-height: 20px;
   margin-bottom: 0;
   margin-top: 0;
-  border-bottom: 1px solid rgba(0,0,0,0.3);
-  @media (max-width: @mobile-width-only){
-    margin-top:0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+  @media (max-width: @mobile-width-only) {
+    margin-top: 0;
     padding-top: 7px;
     padding-bottom: 12px;
   }
-  @media (min-width: @tablet-width){
-    margin-top:0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
     padding-top: 7px;
     padding-bottom: 12px;
   }
-  @media (min-width: @desktop-width){
-    margin-top:0;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
     padding-top: 2px;
     padding-bottom: 17px;
   }
 }
 
 .product-of-the-week__image {
-  @media (min-width: @tablet-width){
-    margin-top:0;
-    margin-bottom: 0;
+  @media (max-width: @mobile-width-only) {
+    width: 100%;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
     height: 100%;
-    }
-  width: 100%;
+  }
 }
-.product-of-the-week__link{
-  height: 315px;
+
+.product-of-the-week__link {
+
   display: block;
-  @media (max-width: @mobile-width-only){
+
+  @media (max-width: @mobile-width-only) {
     margin-bottom: 27px;
     margin-top: 27px;
-    }
-  @media (min-width: @tablet-width){
+    height: auto;
+  }
+
+  @media (min-width: @tablet-width) {
     grid-column: 2/3;
     grid-row: 2/6;
     height: 404px;
-    }
-  @media (min-width: @desktop-width){
+  }
+
+  @media (min-width: @desktop-width) {
     grid-column: 3/4;
-    grid-row:1/6;
+    grid-row: 1/6;
     z-index: -1;
     margin-left: 15px;
     height: 636px;
     margin-top: -9px;
   }
 }
-.product-of-the-week__price-order-container{
-  @media (min-width: @tablet-width){
+
+.product-of-the-week__price-order-container {
+  @media (min-width: @tablet-width) {
     grid-column: 1/2;
     grid-row: 4/5;
     margin-top: 39px;
-    }
-  @media (min-width: @desktop-width){
+  }
+
+  @media (min-width: @desktop-width) {
     grid-row: 5/6;
     grid-column: 2/3;
     margin-top: 20px;
   }
 }
+
 .product-of-the-week__price {
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 24px;
-    }
+  }
 
-  @media (min-width: @desktop-width){
+  @media (min-width: @desktop-width) {
     grid-row: 4/5;
     grid-column: 2/3;
     margin-top: 20px;
-  font-size: 20px;
-  line-height: 24px;
+    font-size: 20px;
+    line-height: 24px;
   }
   margin-bottom: 0;
   font-weight: 700;
@@ -233,17 +258,20 @@
   line-height: 24px;
   text-align: center;
 }
-.product-of-the-week__order-link{
+
+.product-of-the-week__order-link {
   width: 100%;
   margin-top: 24.5px;
   margin-bottom: 36px;
-  @media (min-width: @tablet-width){
+
+  @media (min-width: @tablet-width) {
     grid-column: 1/2;
     grid-row: 5/6;
-    margin-bottom:0;
+    margin-bottom: 0;
     margin-top: 31px;
-    }
-  @media (min-width: @desktop-width){
+  }
+
+  @media (min-width: @desktop-width) {
     grid-column: 2/3;
     grid-row: 4/5;
     font-size: 17px;

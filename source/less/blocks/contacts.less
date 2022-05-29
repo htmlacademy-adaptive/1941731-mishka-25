@@ -2,24 +2,27 @@
 .contacts .container {
   position: relative;
   color: @tundora;
-  @media (max-width: @mobile-width-only){
+
+  @media (max-width: @mobile-width-only) {
     background-image: url("../img/zigzag_line_desktop.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
-    padding-top: 45px;
+    padding-top: 25px;
   }
-  @media (min-width: @tablet-width){
+
+  @media (min-width: @tablet-width) {
     background-image: url("../img/zigzag_line_desktop.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     margin-top: 67px;
     padding-top: 50px;
   }
-  @media (min-width: @desktop-width){
-    width:fit-content;
-    margin-left:  auto;
+
+  @media (min-width: @desktop-width) {
+    width: fit-content;
+    margin-left: auto;
     max-width: 1050px;
-    display:grid;
+    display: grid;
     grid-template-columns: 295px 50%;
     column-gap: 54px;
     background-image: url("../img/zigzag_line_desktop.svg");
@@ -31,16 +34,17 @@
     margin-bottom: 105px;
     margin-top: 49px;
   }
-
 }
-.contacts__list{
-  @media (min-width: @tablet-width){
+
+.contacts__list {
+  @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0;
     margin-top: 9px;
   }
-  @media (min-width: @desktop-width){
+
+  @media (min-width: @desktop-width) {
     grid-column: 1/2;
     grid-row: 2/3;
     display: grid;
@@ -48,7 +52,6 @@
     margin-top: -20px;
     row-gap: 2px;
   }
-
 }
 
 .contacts__title {
@@ -56,17 +59,17 @@
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 0;
-  @media (max-width: @mobile-width-only) and (max-width: @tablet-width){
-    margin-top: 45px;
-  }
-  @media (min-width: @desktop-width){
+
+
+  @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
     grid-column: 1/2;
     margin-top: 79px;
   }
-  &:before{
-    @media (min-width: @tablet-width){
+
+  &::before {
+    @media (min-width: @tablet-width) {
       top: 64px;
       right: 53px;
       background-image: url("../img/flag.svg");
@@ -75,7 +78,8 @@
       height: 81px;
       content: "";
     }
-    @media (min-width: @desktop-width){
+
+    @media (min-width: @desktop-width) {
       left: 63px;
       top: 156px;
     }
@@ -83,7 +87,7 @@
 }
 
 .contacts__item {
-  @media (max-width: @mobile-width-only){
+  @media (max-width: @mobile-width-only) {
     margin-top: 29px;
   }
   font-size: 14px;
@@ -91,51 +95,65 @@
   margin-bottom: 0;
   display: grid;
   grid-template-columns: 78px 1fr;
-  @media (min-width: @tablet-width){
+
+  @media (min-width: @tablet-width) {
     font-size: 17px;
     line-height: 30px;
     width: 100%;
     margin-top: 40px;
-
   }
-  @media (min-width: @desktop-width){
+
+  @media (min-width: @desktop-width) {
     margin-top: 0;
   }
 }
-.contacts__value{
+
+.contacts__value {
   margin-inline-start: 0;
 }
+
 .contacts__email-link {
   color: @tundora;
   text-decoration: none;
-  @media (min-width: @desktop-width){
-    border-bottom: 1px solid  @downy;
+  border-bottom: 1px solid  @downy;
+  padding-bottom: 2px;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 3px;
   }
-  padding-bottom: 8px;
-  &:hover{
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 7px;
+  }
+
+  &:hover {
     color: @puerto-rico;
   }
-  &:active{
-    border:0;
+
+  &:active {
+    border: 0;
   }
 }
 
 .contacts__map {
   margin-top: 62px;
   margin-bottom: 0;
-  display:block;
-  @media (max-width: @mobile-width-only){
+  display: block;
+
+  @media (max-width: @mobile-width-only) {
     width: 100vw;
     margin-left: -30px;
     height: 454px;
   }
-  @media (min-width: @tablet-width){
+
+  @media (min-width: @tablet-width) {
     margin-left: -50px;
     margin-top: 49px;
     width: 100vw;
     height: 457px;
   }
-  @media (min-width: @desktop-width){
+
+  @media (min-width: @desktop-width) {
     margin: 0;
     max-width: 528px;
     grid-column: 2/3;
@@ -143,6 +161,7 @@
     max-height: 457px;
   }
 }
+
 .contacts iframe {
   border: none;
   display: block;
@@ -152,27 +171,33 @@
   position: absolute;
   bottom: 383px;
   left: 167px;
-  @media (min-width: @desktop-width){
+
+  @media (min-width: @desktop-width) {
     grid-column: 2/3;
   }
 }
-.contacts__link{
+
+.contacts__link {
   width: 100%;
   margin: 0;
-  @media (min-width: @desktop-width){
+
+  @media (min-width: @desktop-width) {
     padding: 0 27px;
   }
 }
-.contacts__link-container{
+
+.contacts__link-container {
   margin: 40px 0;
-  @media (min-width: @tablet-width){
+
+  @media (min-width: @tablet-width) {
     width: 230px;
     margin: 55px auto;
-   }
-  @media (min-width: @desktop-width){
-  grid-column: 1/2;
-  grid-row: 3/4;
-  margin: auto 0 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin: auto 0 0 0;
   }
 }
 
