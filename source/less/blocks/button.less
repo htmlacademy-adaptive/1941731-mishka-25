@@ -1,15 +1,29 @@
 .button {
   display: inline-block;
-  padding: 16px 0;
+  padding: 16px 0 16px 0;
   text-align: center;
   border: 2px solid @tundora;
-  width: 260px;
-  margin-bottom: 42px;
-  margin-top: 24.5px;
+  min-height: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   text-decoration: none;
   color: @tundora;
   text-transform: uppercase;
+  box-sizing: border-box;
+  background-color: @white;
+  font-family: @fonts;
+
+  &:hover {
+    color: @white;
+    background-color: @tundora;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
 }

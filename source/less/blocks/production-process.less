@@ -1,27 +1,213 @@
-.production-process {
+.production-process.container {
   margin-bottom: 0;
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media (max-width: @mobile-width-only) {
+    margin: 30px 30px 57px 30px;
+    padding: 0;
+    border: 1px solid @gallery;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 53px;
+    padding-bottom: 47px;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: 65% 24%;
+    column-gap: 7.5%;
+    margin-bottom: 105px;
+    border: 1px solid @gallery;
+    padding-bottom: 0;
+  }
 }
+
 
 .production-process__title {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   margin: 0;
+  height: fit-content;
+
+  @media (max-width: @mobile-width-only) {
+    width: 60%;
+    margin-left: 91px;
+    margin-top: 24px;
+
+    &::before {
+      background-image: url("../img/camera_icon.svg ");
+      position: absolute;
+      width: 32px;
+      height: 22px;
+      content: "";
+      top: 36px;
+      left: 33px;
+    }
+  }
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    order: 2;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 107px;
+    margin-top: 42px;
+
+    &::before {
+      background-image: url("../img/camera_icon.svg ");
+      position: absolute;
+      width: 32px;
+      height: 22px;
+      content: "";
+      bottom: 227px;
+      left: 91px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 97px;
+    padding-right: 110px;
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      background-image: url("../img/camera_icon.svg ");
+      position: absolute;
+      width: 32px;
+      height: 22px;
+      content: "";
+      top: 47px;
+    }
+  }
 }
 
 .production-process__img {
   margin-top: 26.5px;
   margin-bottom: 0;
+  width: 100%;
+
+  @media (max-width: @mobile-width-only) {
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 682.65px;
+    height: 455px;
+  }
 }
+
+.production-process__play-icon {
+  &:hover {
+    width: 120%;
+    height: 120%;
+  }
+
+  &:active {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+.production-process__video-container {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+}
+
 
 .production-process__description {
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   color: @tundora;
-  margin-top: 35px;
+  margin-top: 0;
   margin-bottom: 0;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  height: fit-content;
+
+  @media (max-width: @mobile-width-only) {
+    margin-top: 30px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    max-width: 90%;
+    order: 3;
+    font-size: 15px;
+    line-height: 30px;
+    margin-left: 40px;
+    margin-top: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    max-width: 100%;
+    height: fit-content;
+    margin-bottom: 22px;
+    font-size: 15px;
+    line-height: 30px;
+
+    & br {
+      display: none;
+    }
+  }
+}
+
+.production-process__link {
+  width: 100%;
+  padding-bottom: 13px;
+}
+
+.production-process__link-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: @mobile-width-only) {
+    margin: 41px auto 33px auto;
+    width: 192px;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 87.5%;
+    order: 4;
+    margin-top: 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 34px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 230px;
+    margin-right: 20px;
+  }
 }
 
 .production-process__video-link {
@@ -30,11 +216,13 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 16px;
-  position: relative;
-}
-
-.production-process__play-icon {
   position: absolute;
-  bottom: 40px;
-  right: 70px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (max-width: @mobile-width-only) {
+    top: 56%;
+    left: 50%;
+  }
 }
