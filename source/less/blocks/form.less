@@ -202,13 +202,17 @@
   &--radio {
     @media (max-width: @mobile-width-only) {
       width: 77%;
-      margin-left: auto;
+      padding-left: 60px;
     }
 
     @media (min-width: @tablet-width) {
       padding-left: 79px;
       padding-bottom: 58px;
       margin-right: 32px;
+
+      & br {
+        display: none;
+      }
     }
 
     @media (min-width: @desktop-width) {
@@ -502,11 +506,11 @@
     width: 40px;
     height: 40px;
     top: -5px;
-    left: -60px;
+    left: 0;
 
     &--child-toy {
       top: -11px;
-      left: -60px;
+      left: 0;
     }
   }
 
