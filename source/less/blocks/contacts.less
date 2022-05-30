@@ -141,7 +141,8 @@
   }
 }
 
-.contacts__map {
+.contacts__map,
+.contacts__map-img {
   margin-top: 62px;
   margin-bottom: 0;
   display: block;
@@ -167,6 +168,19 @@
     max-height: 457px;
   }
 }
+
+.conctacts__map.contacts__map--nojs {
+  display: none;
+}
+
+.contacts__map-img {
+  display: none;
+}
+
+.contacts__map-img.conctacts-map--nojs {
+  display: block;
+}
+
 
 .contacts iframe {
   border: none;
