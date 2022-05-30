@@ -18,7 +18,7 @@ export const styles = () => {
     .pipe(postcss([autoprefixer(), csso()]))
 
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("source/css", { sourcemaps: "." }))
+    .pipe(gulp.dest("build/css", { sourcemaps: "." }))
     .pipe(browser.stream());
 };
 
@@ -27,7 +27,7 @@ export const html = () => {
   return gulp
     .src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest("source"));
+    .pipe(gulp.dest("build"));
 };
 
 // Server
@@ -35,7 +35,7 @@ export const html = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: "source",
+      baseDir: "build",
     },
     cors: true,
     notify: false,
@@ -51,4 +51,4 @@ const watcher = () => {
   gulp.watch("source/*.html").on("change", browser.reload);
 };
 
-export default gulp.series(styles, server, watcher);
+export default gulp.series(html, styles, server, watcher);

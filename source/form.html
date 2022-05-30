@@ -71,7 +71,7 @@
     </header>
     <main class="main-container">
         <div class="main-container__page-title-container">
-          <h1 class="container section-title--main">Вязание на заказ</h1>
+          <h1 class="container main-container__main-title">Вязание на заказ</h1>
         </div>
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="form__description container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
@@ -151,13 +151,13 @@
               <div class="selection__phone container">
                 <label class="selection__title form__legend" for="phone-number-of-customer">тел</label>
                 <div class="form__phone-input-container">
-                    <input class="form__contacts-input form__phone-input" type="tel" name="phone-number-of-customer" placeholder="+7 ХХХ ХХХ ХХ ХХ*" maxlength="11">
+                    <input class="form__contacts-input form__phone-input" type="tel" name="phone-number-of-customer" id="phone-number-of-customer" placeholder="+7 ХХХ ХХХ ХХ ХХ*" maxlength="11">
                 </div>
               </div>
               <div class="selection__email container">
-                <label class="selection__title form__legend" for="email-number-of-customer">e-mail</label>
+                <label class="selection__title form__legend" for="email-of-customer">e-mail</label>
                 <div class="form__email-input-container">
-                    <input class="form__contacts-input" type="email" name="email-number-of-customer" placeholder="Ваш Email*">
+                    <input class="form__contacts-input" type="email" name="email-of-customer" id="email-of-customer" placeholder="Ваш Email*">
                 </div>
               </div>
           </section>
@@ -235,34 +235,5 @@
           </section>
         </div>
     </footer>
-    <div class="modal visually-hidden">
-        <div class="modal__content">
-          <h2 class="modal__name">Добавить в корзину</h2>
-          <p class="modal__description">Выберите размер:</p>
-          <ul class="modal__list">
-              <li class="modal__item">
-                <label class="modal__label">
-                <input class="modal__radio-input" type="radio" name="product-category" checked>
-                S
-                </label>
-              </li>
-              <li class="modal__item">
-                <label class="modal__label">
-                <input class="modal__radio-input" type="radio" name="product-category">
-                M
-                </label>
-              </li>
-              <li class="modal__item">
-                <label class="modal__label">
-                <input class="modal__radio-input" type="radio" name="product-category">
-                L
-                </label>
-              </li>
-          </ul>
-          <button class="button modal__button">
-          Добавить
-          </button>
-        </div>
-    </div>
   </body>
 </html>
