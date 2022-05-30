@@ -4,8 +4,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 84px;
+    margin-top: 95px;
   }
+}
+
+.form__button.button {
+  padding: 16px 0;
 }
 
 .form__description.container {
@@ -257,6 +261,17 @@
 }
 
 .form__name-input {
+  box-shadow: inset 0 -2px 0 @black;
+
+  &:hover {
+    box-shadow: inset 0 -2px 0 @downy-border;
+  }
+
+  &:focus {
+    box-shadow: inset 0 -2px 0 @downy-border;
+    outline: 0;
+  }
+
   @media (min-width: @tablet-width) {
     margin-left: 25px;
     padding-left: 17px;
@@ -270,18 +285,44 @@
 
 .form__contacts-input {
   position: relative;
+  padding-right: 40px;
 
   @media (min-width: @tablet-width) {
     padding-left: 16px;
+    padding-right: 60px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 19px;
+    padding-right: 40px;
   }
 }
 
 .form__phone-input-container {
+  box-shadow: inset 0 -2px 0 @black;
+
+  &:hover {
+    box-shadow: inset 0 -2px 0 @downy-border;
+  }
+
+  &:focus {
+    box-shadow: inset 0 -2px 0 @downy-border;
+    outline: 0;
+  }
+
   &::before {
+    @media (max-width: @mobile-width-only) {
+      background-image: url("../img/phone_icon.svg ");
+      opacity: 0.2;
+      position: absolute;
+      width: 25px;
+      height: 24px;
+      content: "";
+
+      right: 37px;
+      top: 30px;
+    }
+
     @media (min-width: @tablet-width) {
       background-image: url("../img/phone_icon.svg ");
       opacity: 0.2;
@@ -338,7 +379,29 @@
 }
 
 .form__email-input-container {
+  box-shadow: inset 0 -2px 0 @black;
+
+  &:hover {
+    box-shadow: inset 0 -2px 0 @downy-border;
+  }
+
+  &:focus {
+    box-shadow: inset 0 -2px 0 @downy-border;
+    outline: 0;
+  }
+
   &::before {
+    @media (max-width: @mobile-width-only) {
+      background-image: url("../img/mail_icon.svg ");
+      opacity: 0.2;
+      position: absolute;
+      width: 32px;
+      height: 21px;
+      content: "";
+      right: 33px;
+      top: 36px;
+    }
+
     @media (min-width: @tablet-width) {
       background-image: url("../img/mail_icon.svg ");
       opacity: 0.2;
@@ -403,12 +466,7 @@
   font-family: @fonts;
   background-color: transparent;
 
-  &:hover {
-    border-color: @downy-border;
-  }
-
   &:focus {
-    border-color: @downy-border;
     outline: 0;
   }
 
@@ -430,9 +488,7 @@
 .form__contacts-input,
 .form__name-input {
   height: 52px;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
+  border: 0;
 }
 
 .form__radio-mark {
@@ -490,9 +546,14 @@
   content: "";
 }
 
-.form__radio-input:active + .form__radio-mark::before {
+.form__radio-input:focus + .form__radio-mark {
   border: 2px solid rgba(0, 0, 0, 0.3);
 }
+
+.form__checkbox-input:focus + .form__checkbox-mark {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
 
 .form__checkbox-mark {
   position: absolute;

@@ -34,6 +34,7 @@
   }
 }
 
+
 .main-nav__link:hover .main-nav__icon {
   color: @downy;
   opacity: 1;
@@ -82,7 +83,7 @@
 .main-nav--opened .main-nav__toggle {
   position: absolute;
   top: 0;
-  right: 14px;
+  right: 0;
   width: 21px;
   height: 20px;
 
@@ -92,6 +93,7 @@
     position: absolute;
     top: 37px;
     width: 27px;
+    right: 0;
     height: 2px;
     background-color: @black;
   }
@@ -123,7 +125,12 @@
   .main-nav--closed .user-list__item {
     display: none;
   }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
 }
+
 
 .main-nav__menu-img {
   @media (max-width: @mobile-width-only) {
@@ -169,7 +176,8 @@
     justify-content: flex-start;
     height: 79px;
     background-color: @white;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border: 0;
+    box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
   }
   display: flex;
 }
